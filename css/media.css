@@ -1,0 +1,179 @@
+/* 1000px mark */
+@media screen and (max-width: 1000px) {
+  /* All Links */
+  a:link,
+  a:visited {
+    font-size: calc(1rem + 1vw);
+  }
+}
+
+/* 800px mark */
+@media screen and (max-width: 800px) {
+  /* Booking Content */
+  #booking-content {
+    padding: 4vh 3vw;
+    grid-column: center-start / center-end;
+  }
+
+  .booking-content__title {
+    text-align: center;
+  }
+
+  .booking-content__title:after {
+    left: 40%;
+    width: 20%;
+  }
+
+  /* Booking Date */
+  #booking-date {
+    padding: 4vh 3vw;
+    grid-column: center-start / center-end;
+    grid-row-gap: 7vh;
+  }
+
+  .booking-date__schedule--arrival > div,
+  .booking-date__schedule--departure > div,
+  .booking-date__schedule--guests > div {
+  padding: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content;
+  grid-column-gap: 2vw;
+  place-items: center;
+  }
+
+  /* Villas Section */
+  #villas {
+    grid-gap: 0;
+  }
+
+  /* Footer */
+  #footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 3rem;
+  }
+}
+
+/* 600px mark */
+@media screen and (max-width: 600px) {
+  /* Header Showcase Para */
+  .header-showcase__content--para {
+    font-size: 2rem;
+  }
+
+  /* Booking Date Section */
+  #booking-date {
+    grid-template-rows: repeat(2, max-content);
+  }
+
+  .booking-date__schedule--arrival > div,
+  .booking-date__schedule--departure > div,
+  .booking-date__schedule--guests > div {
+    padding: 4rem;
+    grid-template-columns: min-content;
+  }
+
+  /* Booking Content Section */
+  .booking-content__para,
+  div[class^="villas"] p[class^="villas"],
+  .motto__content--para,
+  #events-content > div p[class*="para"],
+  #features-content > div p[class*="para"],
+  #footer p {
+    font-size: 1.5rem;
+  }
+
+  /* Villas Section */
+  div[class^="villas"] p[class^="villas"] {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 4rem 0;
+  }
+
+  /* Motto Section */
+  .motto-content__para {
+    font-size: 1.5rem;
+  }
+
+  /* Event Content */
+  #event-content > div:first-child,
+  #event-content > div:last-child,
+  #features-content > div:first-child,
+  #features-content > div:last-child {
+  border: none;
+  }
+
+  #event-header,
+  #gallery-header,
+  #features-header {
+    display: none;
+  }
+
+  #event-content,
+  #features-content {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
+  #gallery-carousel,
+  #event-content,
+  #features-content {
+    grid-column: center-end / center-start;
+  }
+
+  #event-content > div p[class*="para"],
+  #features-content > div p[class*="para"] {
+    font-size: 1.5rem;
+  }
+
+
+/* Gallery Section */
+  /* Carousel Left/Right Buttons */
+  .gallery-carousel__btn i {
+    font-size: 5rem;
+  }
+
+  /* Carousel Navigation */
+  .gallery-carousel__nav {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 3vh;
+    grid-column-gap: 10vw;
+    height: 12%;
+  }
+
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Booking Content Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Villas Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Motto Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Events Content Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Gallery Carousel Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Features Content Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  /*@@##$$%%^^&&**@@##$$%%^^&&**^^ Footer Section ^^**@@##$$%%^^&&**@@##$$%%^^&&*/
+  div[class^="villas"] p[class^="villas"] {
+    margin: 1.5rem 0 4rem 0;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 4vh 2vw;
+  }
+
+}
+
+/* 400px mark */
+@media screen and (max-width: 400px) {
+  /* Booking Date Schedule */
+  .booking-date__schedule {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto;
+    grid-row-gap: 2vh;
+  }
+
+  .booking-date__contact {
+    justify-self: center;
+    padding: 0 2rem;
+  }
+
+  /* Villas section */
+  #villas {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
