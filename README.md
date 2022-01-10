@@ -7,7 +7,7 @@ Animations and the use of svg's are other things I did during the development of
 The website has a "Gallery Carousel" which is made using "Vanilla Javascript"
 Undertaking this project, I was able to improve on my CSS skills and basic JAVASRIPT skills.
 
-<a href="https://vlv-relaxation-home-atomdev.netlify.app//">
+<a href="https://vlv-relaxation-home-atomdev.netlify.app/">
       Project Website
     </a>
 
